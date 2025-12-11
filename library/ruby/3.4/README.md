@@ -54,7 +54,7 @@ kraft run --rm -M 256M -p 8080:8080 --plat qemu --arch x86_64 unikraft.org/ruby:
 
 The commands so far used the pre-build Ruby image available in the Unikraft registry.
 
-In order to build a local image, clone this repository and `cd` into this directory.
+In oder to to build a local image, clone this repository and `cd` into this directory.
 Then use `kraft` to build an image locally:
 
 ```bash
@@ -67,7 +67,7 @@ If the `--arch` argument is left out, it defaults to your system's CPU architect
 In order to run the locally built image, use `.` (_dot_, the current directory)  as the final argument to the `kraft run` command:
 
 ```bash
-kraft run -M 256M -p 8080:8080 --plat qemu --arch x86_64 .
+kraft run -M 512M -p 8080:8080 --plat qemu --arch x86_64 .
 ```
 
 Same as above, it will open port `8080` and wait for connections.
